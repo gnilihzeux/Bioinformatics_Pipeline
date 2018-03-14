@@ -1,0 +1,7 @@
+1. 是否每个样本都存在 annotate 以及 denovo 的 circRNA 列表
+
+2. 对于不同的样本所识别到的 circRNA 不一样，应该如何解决？
+   1> 生物学重复样本
+   2> 技术学重复样本
+   3> 不同条件的样本
+   4> 如果最后获得的 common circRNA 太少，利用 DESeq2 是否合适
