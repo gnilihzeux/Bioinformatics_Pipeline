@@ -10,6 +10,8 @@ getCircList <- function(sample_names, type= "annotated"){
     
     # annotated or denovo circRNA
     if(type == "annotated"){
+      #' @issue
+      #' where are the files
       sample_dir <- paste0(workdir,"circRNA/", sample_name, "/circ_out/annotate/circ_fusion.txt")
     }else{
       sample_dir <- paste0(workdir,"circRNA/", sample_name, "/circ_out/denovo/novel_circ.txt")
@@ -96,7 +98,9 @@ doDeseq <- function(count_data, col_data){
     source("https://bioconductor.org/biocLite.R")
     biocLite("DESeq2")
   }else{
-    try(require(DESeq2), silent= TRUE)
+    
+    #' @issue how to suppress message
+    require(DESeq2)
   }
   
   dds <- DESeqDataSetFromMatrix(countData = count_data,
@@ -137,45 +141,85 @@ doDeseq <- function(count_data, col_data){
 
 degAssess <- function(reslt, fc= 2, fdr= 0.05, pvalue= 0.001){
   
-  state <- rep("MAINTAIN", nrow(reslt))
-  state[(reslt$log2FoldChange > log2(fc)) & (reslt$pvalue < pvalue) & (reslt$padj < fdr)] <- "UP"
-  state[(reslt$log2FoldChange < log2(1 / fc)) & (reslt$pvalue < pvalue) & (reslt$padj < fdr)] <- "DOWN"
+  state <- rep("maintain", nrow(reslt))
+  state[(reslt$log2FoldChange > log2(fc)) & (reslt$pvalue < pvalue) & (reslt$padj < fdr)] <- "up"
+  state[(reslt$log2FoldChange < log2(1 / fc)) & (reslt$pvalue < pvalue) & (reslt$padj < fdr)] <- "down"
   
-  data.frame(reslt, diffState= state, stringsAsFactors= FALSE)
+  tbl <- data.frame(reslt, diffState= state, stringsAsFactors= FALSE)
+  tbl[order(tbl$diffState), ]
 }
 
 # output ----------------------------------------------------------------------
-outPut <- function(diff_matrix, count_matrix, anno_matrix= NULL, type= "annotated"){
+outPut <- function(diff_matrix, 
+                   count_matrix,
+                   output_dir,
+                   anno_matrix = NULL,
+                   conditions  = c("2", "1"),
+                   type        = "annotated"
+                   ){
   
-  reslt_dir <- paste0(workdir,"circRNA/Diff_Result/")
+  ### directory #####
+  reslt_dir <- paste0(output_dir, "/condition_", conditions[1], "vs", conditions[2])
   if(!dir.exists(reslt_dir))dir.create(reslt_dir)
   
+  diff_gene_dir <- paste0(reslt_dir, "/GO_analysis")
+  if(!dir.exists(diff_gene_dir))dir.create(diff_gene_dir)
+  
+  ### #####
   circ_names <- rownames(diff_matrix)
   
   if(is.null(anno_matrix)){
     tbl <- data.frame(circName= circ_names, diff_matrix, count_matrix[circ_names, ], check.names= FALSE)
   }else{
     tbl <- data.frame(circName= circ_names, diff_matrix, count_matrix[circ_names, ], anno_matrix[circ_names, ], check.names= FALSE)
+    
+    #' @issue colnames
+    #' @issue one host but many circRNA
+    # only contain two columns: circRNA host, diffState
+    gn_tbl <- tbl[tbl$diffState != "maintain", c("geneName", "diffState")]
+    colnames(gn_tbl) <- c("Gene Symbol", "style")
+    
   }
+  
 
+  ### write #####
   if(type == "annotated"){
     
+    #' @issue output file name
     write.table(tbl, 
-                paste0(workdir, 
-                       "circRNA/Diff_Result/annotated-circRNA_result", 
-                       "_(FC",  FOLD_CHANGE, "-FDR", FOLD_CHANGE, "-P", PVALUE, ")_", 
-                       "_condition-", condition_treat, "-vs-", condition_ctrl,
+                paste0(reslt_dir,
+                       "/annotated-circRNA_result", 
+                       #"_(FC",  FOLD_CHANGE, "-Padj", FOLD_CHANGE, "-Pvalue", PVALUE, ")", 
+                       #"_condition-", condition_treat, "-vs-", condition_ctrl,
                        ".txt"),
                 sep= "\t", quote= F, row.names= FALSE, col.names= TRUE)
+    
+    write.table(gn_tbl, 
+                paste0(diff_gene_dir,
+                       "/annotated_diff-circ", 
+                       #"_(FC",  FOLD_CHANGE, "-Padj", FOLD_CHANGE, "-Pvalue", PVALUE, ")", 
+                       #"_condition-", condition_treat, "-vs-", condition_ctrl,
+                       ".txt"),
+                sep= "\t", quote= F, row.names= FALSE, col.names= TRUE)
+    
+    
   }else{
     
     write.table(tbl, 
-                paste0(workdir, 
-                       "circRNA/Diff_Result/novel-circRNA_result", 
-                       "_(FC",  FOLD_CHANGE, "-FDR", FOLD_CHANGE, "-P", PVALUE, ")_", 
-                       "_condition-", condition_treat, "-vs-", condition_ctrl,
+                paste0(reslt_dir,
+                       "/novel-circRNA_result", 
+                       #"_(FC",  FOLD_CHANGE, "-Padj", FOLD_CHANGE, "-Pvalue", PVALUE, ")", 
+                       #"_condition-", condition_treat, "-vs-", condition_ctrl,
                        ".txt"),
                 sep= "\t", quote= F, row.names= FALSE, col.names= TRUE)
+    
   }
+  
+  #' @issue this should be a new function
+  ### go pathway #####
+  
+  GO_dir <- diff_gene_dir
+  source(paste(CODE_DIR, "Go-pathway-analysis.R", sep= "/"))
+  
 }
 
