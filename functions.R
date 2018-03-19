@@ -152,23 +152,17 @@ degAssess <- function(reslt, fc= 2, fdr= 0.05, pvalue= 0.001){
 # output ----------------------------------------------------------------------
 outPut <- function(diff_matrix, 
                    count_matrix,
+                   col_data,
                    output_dir,
                    anno_matrix = NULL,
-                   conditions  = c("2", "1"),
                    type        = "annotated"
                    ){
-  
-  ### directory #####
-  reslt_dir <- paste0(output_dir, "/condition_", conditions[1], "vs", conditions[2])
-  if(!dir.exists(reslt_dir))dir.create(reslt_dir)
-  
-  diff_gene_dir <- paste0(reslt_dir, "/GO_analysis")
-  if(!dir.exists(diff_gene_dir))dir.create(diff_gene_dir)
   
   ### #####
   circ_names <- rownames(diff_matrix)
   
   if(is.null(anno_matrix)){
+    
     tbl <- data.frame(circName= circ_names, diff_matrix, count_matrix[circ_names, ], check.names= FALSE)
   }else{
     tbl <- data.frame(circName= circ_names, diff_matrix, count_matrix[circ_names, ], anno_matrix[circ_names, ], check.names= FALSE)
@@ -178,16 +172,15 @@ outPut <- function(diff_matrix,
     # only contain two columns: circRNA host, diffState
     gn_tbl <- tbl[tbl$diffState != "maintain", c("geneName", "diffState")]
     colnames(gn_tbl) <- c("Gene Symbol", "style")
-    
   }
-  
+  rownames(tbl) <- tbl$circName
 
   ### write #####
   if(type == "annotated"){
     
     #' @issue output file name
     write.table(tbl, 
-                paste0(reslt_dir,
+                paste0(output_dir,
                        "/annotated-circRNA_result", 
                        #"_(FC",  FOLD_CHANGE, "-Padj", FOLD_CHANGE, "-Pvalue", PVALUE, ")", 
                        #"_condition-", condition_treat, "-vs-", condition_ctrl,
@@ -195,7 +188,7 @@ outPut <- function(diff_matrix,
                 sep= "\t", quote= F, row.names= FALSE, col.names= TRUE)
     
     write.table(gn_tbl, 
-                paste0(diff_gene_dir,
+                paste0(output_dir, "/Go_analysis",
                        "/annotated_diff-circ", 
                        #"_(FC",  FOLD_CHANGE, "-Padj", FOLD_CHANGE, "-Pvalue", PVALUE, ")", 
                        #"_condition-", condition_treat, "-vs-", condition_ctrl,
@@ -214,12 +207,9 @@ outPut <- function(diff_matrix,
                 sep= "\t", quote= F, row.names= FALSE, col.names= TRUE)
     
   }
-  
-  #' @issue this should be a new function
-  ### go pathway #####
-  
-  GO_dir <- diff_gene_dir
-  source(paste(CODE_DIR, "Go-pathway-analysis.R", sep= "/"))
+
+  # return -----------------------
+  tbl
   
 }
 

@@ -17,6 +17,7 @@ CODE_DIR <- "/data3/circRNA/bin"
 options(stringsAsFactors= FALSE)
 source(paste(CODE_DIR, "data.R", sep= "/"))
 source(paste(CODE_DIR, "functions.R", sep= "/"))
+library(pheatmap)
 
 # perform differential expression analysis --------------------------------------
 
@@ -40,8 +41,15 @@ for(combn_index in seq_len(ncol(condition_combn))){
   result_dir <- paste0(workdir,"circRNA/Diff_Result")
   if(!dir.exists(result_dir))dir.create(result_dir)
   
-  heatmap_dir <- paste0(result_dir, "/heatmap")
+  reslt_dir <- paste0(result_dir, "/condition_", condition_treat, "vs", condition_ctrl)
+  if(!dir.exists(reslt_dir))dir.create(reslt_dir)
+  
+  go_dir <- paste0(reslt_dir, "/Go_analysis")
+  if(!dir.exists(go_dir))dir.create(go_dir)
+  
+  heatmap_dir <- paste0(reslt_dir, "/heatmap")
   if(!dir.exists(heatmap_dir))dir.create(heatmap_dir)
+  
   
   # DEA
   # 1. annotated
@@ -52,28 +60,36 @@ for(combn_index in seq_len(ncol(condition_combn))){
   
   diff_circ <- degAssess(reslt$results, fc= FOLD_CHANGE, fdr= FDRVALUE, pvalue= PVALUE)
   
-  outPut(diff_circ,
-         reslt$normalized_counts, 
-         output_dir  = result_dir, 
-         anno_matrix = anno_info,
-         conditions  = c(condition_treat, condition_ctrl),
-         type= "annotated")
+  out_tbl <- outPut(diff_circ,
+                    reslt$normalized_counts,
+                    col_data,
+                    output_dir  = reslt_dir, 
+                    anno_matrix = anno_info,
+                    type= "annotated")
   
-  heatmap_input <- diff_circ[, c("circName", col_data$sample)]
+  
+  #' @issue this should be a new function
+  ### go pathway -----------------
+  GO_dir <- go_dir
+  source(paste(CODE_DIR, "Go-pathway_mainscript.R", sep= "/"))
+  
+  # heatmap ----------------------
+  heatmap_input <- out_tbl[, col_data$sample]
   heatmap_labels <- pheatmap(heatmap_input,
-                      scale = "row", 
-                      clustering_distance_rows = clustering_distance_rows,
-                      clustering_distance_cols = clustering_distance_cols,
-                      color = colorRampPalette(c("blue", "white", "red"))(50),
-                      cluster_rows = TRUE,
-                      cluster_cols = TRUE, 
-                      border_color = FALSE,
-                      #main = "ssssssssss",
-                      annotation_col = col_data$condition,
-                      show_rownames = TRUE, 
-                      show_colnames = TRUE, 
-                      number_color = "blue",
-                      height=8,width=9,filename=paste0(heatmap_dir,"/annotated_heatmap.pdf"),fontsize = 10)
+                             scale = "row", 
+                             clustering_distance_rows = "euclidean",
+                             clustering_distance_cols = "euclidean",
+                             color = colorRampPalette(c("blue", "white", "red"))(50),
+                             cluster_rows = TRUE,
+                             cluster_cols = TRUE, 
+                             border_color = FALSE,
+                             #main = "ssssssssss",
+                             annotation_col = col_data["condition"],
+                             show_rownames = TRUE, 
+                             show_colnames = TRUE, 
+                             number_color = "blue",
+                             height=8,width=9,filename=paste0(heatmap_dir,"/annotated_heatmap.pdf"),fontsize = 10)
+  
   
   
   # 2. novel
@@ -83,28 +99,29 @@ for(combn_index in seq_len(ncol(condition_combn))){
   reslt <- doDeseq(count_data, col_data)
   
   diff_circ <- degAssess(reslt$results, fc= FOLD_CHANGE, fdr= FDRVALUE, pvalue= PVALUE)
-  outPut(diff_circ, 
-         reslt$normalized_counts, 
-         output_dir  = result_dir, 
-         anno_matrix = NULL,
-         conditions  = c(condition_treat, condition_ctrl),
-         type= "novel")  
+  out_tbl <- outPut(diff_circ, 
+                    reslt$normalized_counts, 
+                    col_data,
+                    output_dir  = result_dir, 
+                    anno_matrix = NULL,
+                    type= "novel")  
   
-  heatmap_input <- diff_circ[, c("circName", col_data$sample)]
+  # heatmap ----------------------
+ 
+  heatmap_input <- out_tbl[, col_data$sample]
   heatmap_labels <- pheatmap(heatmap_input,
                              scale = "row", 
-                             clustering_distance_rows = clustering_distance_rows,
-                             clustering_distance_cols = clustering_distance_cols,
+                             clustering_distance_rows = "euclidean",
+                             clustering_distance_cols = "euclidean",
                              color = colorRampPalette(c("blue", "white", "red"))(50),
                              cluster_rows = TRUE,
                              cluster_cols = TRUE, 
                              border_color = FALSE,
                              #main = "ssssssssss",
-                             annotation_col = col_data$condition,
+                             annotation_col = col_data["condition"],
                              show_rownames = TRUE, 
                              show_colnames = TRUE, 
                              number_color = "blue",
                              height=8,width=9,filename=paste0(heatmap_dir,"/annotated_heatmap.pdf"),fontsize = 10)
-  
 }
 
