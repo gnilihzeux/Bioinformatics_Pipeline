@@ -9,7 +9,17 @@ SPECIES <- args[3]
 FOLD_CHANGE <- as.numeric(args[4])
 FDRVALUE <- as.numeric(args[5])
 PVALUE <- as.numeric(args[6])
+UNIVERSE_GENES <- NULL
 #OUTPUT_DIR <- args[6]
+
+SPECIES <- switch(SPECIES,
+                  human = "hsa",
+                  hsa   = "hsa",
+                  mouse = "mmu",
+                  mmu   = "mmu",
+                  rat   = "rno", 
+                  rno   = "rno"
+                  )
 
 CODE_DIR <- "/data3/circRNA/bin"
 
@@ -25,7 +35,7 @@ library(pheatmap)
 #' e.g there are 3 conditions 1, 2 and 3, then
 #'     we can get three condition combinations, 
 #'     that is (2, 1), (3, 1) and (3, 2).
-uniq_condition <- unique(sample_info$condition)
+uniq_condition <- unique(sample_info$sampleCondition)
 condition_combn <- combn(uniq_condition, 2)
 
 for(combn_index in seq_len(ncol(condition_combn))){
@@ -34,11 +44,11 @@ for(combn_index in seq_len(ncol(condition_combn))){
   condition_ctrl <- min(condition_combn[, combn_index])
   condition_treat <- max(condition_combn[, combn_index])
   # subset of sample information
-  col_data <- sample_info[sample_info$condition %in% c(condition_ctrl, condition_treat), ]
-  rownames(col_data) <- col_data$sample
+  col_data <- sample_info[sample_info$sampleCondition %in% c(condition_ctrl, condition_treat), ]
+  rownames(col_data) <- col_data$sampleName
   
   # output directory
-  result_dir <- paste0(workdir,"circRNA/Diff_Result")
+  result_dir <- paste0(workdir,"/circRNA/2-Diff_Result")
   if(!dir.exists(result_dir))dir.create(result_dir)
   
   reslt_dir <- paste0(result_dir, "/condition_", condition_treat, "vs", condition_ctrl)
@@ -53,7 +63,7 @@ for(combn_index in seq_len(ncol(condition_combn))){
   
   # DEA
   # 1. annotated
-  circ_list <- getCircList(col_data$sample, type= "annotated")
+  circ_list <- getCircList(col_data$sampleName, type= "annotated")
   count_data <- getCountMatrix(circ_list, col_data)
   reslt <- doDeseq(count_data, col_data)
   anno_info <- getAnno(circ_list, col_data)
@@ -69,32 +79,19 @@ for(combn_index in seq_len(ncol(condition_combn))){
   
   
   #' @issue this should be a new function
-  ### go pathway -----------------
-  GO_dir <- go_dir
-  source(paste(CODE_DIR, "Go-pathway_mainscript.R", sep= "/"))
-  
+  # go pathway -----------------
+  source(paste(CODE_DIR, "outputGoPathway.R", sep= "/"))
+
   # heatmap ----------------------
-  heatmap_input <- out_tbl[, col_data$sample]
-  heatmap_labels <- pheatmap(heatmap_input,
-                             scale = "row", 
-                             clustering_distance_rows = "euclidean",
-                             clustering_distance_cols = "euclidean",
-                             color = colorRampPalette(c("blue", "white", "red"))(50),
-                             cluster_rows = TRUE,
-                             cluster_cols = TRUE, 
-                             border_color = FALSE,
-                             #main = "ssssssssss",
-                             annotation_col = col_data["condition"],
-                             show_rownames = TRUE, 
-                             show_colnames = TRUE, 
-                             number_color = "blue",
-                             height=8,width=9,filename=paste0(heatmap_dir,"/annotated_heatmap.pdf"),fontsize = 10)
+  e_tbl <- out_tbl[out_tbl$diffState != "maintain", col_data$sampleName]
+  rownames(e_tbl) <- out_tbl$circName
   
-  
+  source(paste(CODE_DIR, "HeatMap.R", sep= "/"))
+  HeatMap(e_tbl, annotation_col = col_data["sampleCondition"], path = heatmap_dir, Figurename = "annotated_heatmap.pdf")
   
   # 2. novel
   
-  circ_list <- getCircList(col_data$sample, type= "novel")
+  circ_list <- getCircList(col_data$sampleName, type= "novel")
   count_data <- getCountMatrix(circ_list, col_data)
   reslt <- doDeseq(count_data, col_data)
   
@@ -107,21 +104,11 @@ for(combn_index in seq_len(ncol(condition_combn))){
                     type= "novel")  
   
   # heatmap ----------------------
- 
-  heatmap_input <- out_tbl[, col_data$sample]
-  heatmap_labels <- pheatmap(heatmap_input,
-                             scale = "row", 
-                             clustering_distance_rows = "euclidean",
-                             clustering_distance_cols = "euclidean",
-                             color = colorRampPalette(c("blue", "white", "red"))(50),
-                             cluster_rows = TRUE,
-                             cluster_cols = TRUE, 
-                             border_color = FALSE,
-                             #main = "ssssssssss",
-                             annotation_col = col_data["condition"],
-                             show_rownames = TRUE, 
-                             show_colnames = TRUE, 
-                             number_color = "blue",
-                             height=8,width=9,filename=paste0(heatmap_dir,"/annotated_heatmap.pdf"),fontsize = 10)
+  e_tbl <- out_tbl[out_tbl$diffState != "maintain", col_data$sampleName]
+  rownames(e_tbl) <- out_tbl$circName
+  
+  source(paste(CODE_DIR, "HeatMap.R", sep= "/"))
+  HeatMap(e_tbl, annotation_col = col_data["sampleCondition"], path = heatmap_dir, Figurename = "novel_heatmap.pdf")
+  
 }
 

@@ -3,6 +3,6 @@
 #' 
 
 # sample groups
-sample_info <- read.table(paste0(workdir, group_file), header= F, sep= "\t", stringsAsFactors= FALSE)
-colnames(sample_info) <- c("sample", "label", "condition")
-
+group_file <- sub("/$", "", group_file)
+sample_info <- read.table(paste(workdir, group_file, sep = "/"), header= TRUE, sep= "\t", stringsAsFactors= FALSE)
+rownames(sample_info) <- sample_info$sampleName

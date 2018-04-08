@@ -12,9 +12,9 @@ getCircList <- function(sample_names, type= "annotated"){
     if(type == "annotated"){
       #' @issue
       #' where are the files
-      sample_dir <- paste0(workdir,"circRNA/", sample_name, "/circ_out/annotate/circ_fusion.txt")
+      sample_dir <- paste0(workdir,"/circRNA/", sample_name, "/circ_out/annotate/circ_fusion.txt")
     }else{
-      sample_dir <- paste0(workdir,"circRNA/", sample_name, "/circ_out/denovo/novel_circ.txt")
+      sample_dir <- paste0(workdir,"/circRNA/", sample_name, "/circ_out/denovo/novel_circ.txt")
     }
     
     sample_file <-  read.table(sample_dir, header= FALSE, sep= "\t", stringsAsFactors= FALSE)
@@ -46,7 +46,7 @@ getCircList <- function(sample_names, type= "annotated"){
 #'         intra-condition: biological repeats or technique replicates
 getCountMatrix <- function(circ_list, col_data){
   
-  samples <- col_data$sample
+  samples <- col_data$sampleName
   count_list <- lapply(circ_list[samples], "[", c("circName", "count"))
   for(i in seq_len(length(samples))){
     colnames(count_list[[i]]) <- c("circName", samples[i])
@@ -67,7 +67,7 @@ getCountMatrix <- function(circ_list, col_data){
   #' @issue
   #' expressed in at least one sample of each condition
   indx <- apply(count_matrix, 1, function(x){
-                                   ctrl_col <- col_data$condition == min(col_data$condition)
+                                   ctrl_col <- col_data$sampleCondition == min(col_data$sampleCondition)
                                    (sum(x[ctrl_col] > 0) >=1) & (sum(x[!ctrl_col] > 0) >=1) 
                                  }
   )
@@ -77,7 +77,7 @@ getCountMatrix <- function(circ_list, col_data){
 #' get annotated circRNA's annotation
 getAnno <- function(circ_list, col_data){
   
-  samples <- col_data$sample
+  samples <- col_data$sampleName
   circ_list <- unname(
                  lapply(circ_list[samples], function(x)subset(x, select= - count))
   )
@@ -105,19 +105,19 @@ doDeseq <- function(count_data, col_data){
   
   dds <- DESeqDataSetFromMatrix(countData = count_data,
                                 colData = col_data,
-                                design = ~ condition
+                                design = ~ sampleCondition
                                 )
-  dds$condition <- factor(dds$condition, levels = c(1, 2))
+  dds$sampleCondition <- factor(dds$sampleCondition, levels = sort(unique(col_data$sampleCondition)))
   
   # parameters depend on sample counts
-  #' @section minReplicatesForReplace - outlier removal
-  #' 
-  #' \code{DESeq} function will automatically replace counts with large Cook’s distance with
-  #' the trimmed mean over all samples, scaled up by the size factor or normalization
-  #' factor for that sample. This outlier replacement only occurs when there are 7 or
-  #' more replicates, and can be turned off with \code{DESeq(dds, minReplicatesForReplace=Inf)}.
-  #' 
-  #' @issue
+  # @section minReplicatesForReplace - outlier removal
+  # 
+  # \code{DESeq} function will automatically replace counts with large Cook’s distance with
+  # the trimmed mean over all samples, scaled up by the size factor or normalization
+  # factor for that sample. This outlier replacement only occurs when there are 7 or
+  # more replicates, and can be turned off with \code{DESeq(dds, minReplicatesForReplace=Inf)}.
+  # 
+  # @issue
   dds <- DESeq(dds, fitType= "parametric", minReplicatesForReplace = 7, quiet= TRUE)
   
   # tidy results
@@ -171,7 +171,7 @@ outPut <- function(diff_matrix,
     #' @issue one host but many circRNA
     # only contain two columns: circRNA host, diffState
     gn_tbl <- tbl[tbl$diffState != "maintain", c("geneName", "diffState")]
-    colnames(gn_tbl) <- c("Gene Symbol", "style")
+    colnames(gn_tbl) <- c("geneSymbol", "diffState")
   }
   rownames(tbl) <- tbl$circName
 
