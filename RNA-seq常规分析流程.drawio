@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-19T09:15:47.746Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="xfbiCQxyW1Y1eDQotpLv" version="16.2.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-01-19T09:20:44.752Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="t35oot5_o8W6iKdC0ptk" version="16.2.7" type="github" pages="3">
   <diagram id="SD_GLQ9VekcqfIouxr11" name="RNA-seq常规分析流程">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -149,6 +149,9 @@
         <mxCell id="RjeMHaFso97DG9LdphT8-22" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="737hnoTCpdToOq-JtSO7-1" source="RjeMHaFso97DG9LdphT8-3" target="RjeMHaFso97DG9LdphT8-21">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="yYjXmdsJIR3vJSGxp3he-1" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="737hnoTCpdToOq-JtSO7-1" source="RjeMHaFso97DG9LdphT8-3" target="yYjXmdsJIR3vJSGxp3he-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="RjeMHaFso97DG9LdphT8-3" value="互作网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="737hnoTCpdToOq-JtSO7-1">
           <mxGeometry x="239" y="440" width="120" height="60" as="geometry" />
         </mxCell>
@@ -176,6 +179,9 @@
         <mxCell id="RjeMHaFso97DG9LdphT8-21" value="ceRNA&lt;br&gt;调控网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="737hnoTCpdToOq-JtSO7-1">
           <mxGeometry x="439" y="440" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="yYjXmdsJIR3vJSGxp3he-0" value="驱动基因&lt;br&gt;网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="737hnoTCpdToOq-JtSO7-1">
+          <mxGeometry x="439" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -187,6 +193,9 @@
         <mxCell id="QmjejlGZePa0Qa-1rBb6-4" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="QmjejlGZePa0Qa-1rBb6-1" source="QmjejlGZePa0Qa-1rBb6-2" target="QmjejlGZePa0Qa-1rBb6-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="QmjejlGZePa0Qa-1rBb6-10" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="QmjejlGZePa0Qa-1rBb6-1" source="QmjejlGZePa0Qa-1rBb6-2" target="QmjejlGZePa0Qa-1rBb6-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="QmjejlGZePa0Qa-1rBb6-2" value="lncRNA" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=14;fontColor=default;" vertex="1" parent="QmjejlGZePa0Qa-1rBb6-1">
           <mxGeometry x="50" y="200" width="120" height="60" as="geometry" />
         </mxCell>
@@ -196,14 +205,35 @@
         <mxCell id="QmjejlGZePa0Qa-1rBb6-8" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="QmjejlGZePa0Qa-1rBb6-1" source="QmjejlGZePa0Qa-1rBb6-3" target="QmjejlGZePa0Qa-1rBb6-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QmjejlGZePa0Qa-1rBb6-3" value="靶基因预测" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="QmjejlGZePa0Qa-1rBb6-1">
+        <mxCell id="7X_1ykPo4O7VpB3DiK4N-1" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="QmjejlGZePa0Qa-1rBb6-1" source="QmjejlGZePa0Qa-1rBb6-3" target="7X_1ykPo4O7VpB3DiK4N-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CbajHVmJq3S52B-VpjVp-1" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="QmjejlGZePa0Qa-1rBb6-1" source="QmjejlGZePa0Qa-1rBb6-3" target="CbajHVmJq3S52B-VpjVp-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CbajHVmJq3S52B-VpjVp-3" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="QmjejlGZePa0Qa-1rBb6-1" source="QmjejlGZePa0Qa-1rBb6-3" target="CbajHVmJq3S52B-VpjVp-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QmjejlGZePa0Qa-1rBb6-3" value="互作网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="QmjejlGZePa0Qa-1rBb6-1">
           <mxGeometry x="250" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QmjejlGZePa0Qa-1rBb6-5" value="cis 调控" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="QmjejlGZePa0Qa-1rBb6-1">
-          <mxGeometry x="450" y="200" width="120" height="60" as="geometry" />
+          <mxGeometry x="450" y="100" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QmjejlGZePa0Qa-1rBb6-7" value="trans 调控" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="QmjejlGZePa0Qa-1rBb6-1">
-          <mxGeometry x="450" y="280" width="120" height="60" as="geometry" />
+          <mxGeometry x="450" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QmjejlGZePa0Qa-1rBb6-9" value="调控网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="QmjejlGZePa0Qa-1rBb6-1">
+          <mxGeometry x="250" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7X_1ykPo4O7VpB3DiK4N-0" value="表达&lt;br&gt;相关性网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="QmjejlGZePa0Qa-1rBb6-1">
+          <mxGeometry x="450" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CbajHVmJq3S52B-VpjVp-0" value="miRNA-lncRNA&lt;br&gt;调控网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="QmjejlGZePa0Qa-1rBb6-1">
+          <mxGeometry x="450" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CbajHVmJq3S52B-VpjVp-2" value="ceRNA&lt;br&gt;调控网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="QmjejlGZePa0Qa-1rBb6-1">
+          <mxGeometry x="450" y="420" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
