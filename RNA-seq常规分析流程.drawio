@@ -1,1 +1,107 @@
-<mxfile host="app.diagrams.net" modified="2022-01-19T02:29:03.871Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="2Z67LLZGEc9Zg2WzDaWk" version="16.2.7" type="github"><diagram id="SD_GLQ9VekcqfIouxr11" name="Page-1">7Vxdc5s4FP01muk+dIcPAeIRME66u+2mTWZ287SjGAXTguXFsmP311cXhL8gjpvEJnaZyWSkKyGEdHTu4XITZAbZ/CKn4+FHHrEUGVo0R2YPGYaODQPBjxYtSotjK0OcJ5HqtDJcJ9+ZMmrKOk0iNtnoKDhPRTLeNA74aMQGYsNG85w/bHa75+nmXcc0ZjXD9YCmdes/SSSGpZUYzsp+yZJ4WN1Zt92yJaNVZ/UkkyGN+MOayQyRGeSci7KUzQOWwuJV63L5eex9wbNbfHPTn32MvZvp9//el4P1f+aS5SPkbCSePbSTMevDp9uryR8fwkt+85VcDeL3utrMGU2nasHUw4pFtYIskguqqjwXQx7zEU3DldWXKzOGVrWHPJe2wTSfMbi1Lis5n46ioqbJ2tdpNq4GHPERq0wldmxZXd3mL87HapCvTIiF6kSngkvTUGSpak3pHUt9OvgWFzcLeArT6EXsnk5TuWr+PR+JPs2SFIB8ydIZE8mAqgY1rK6rev1yNoo8gCM8Zkonk2RQGtdmLWgeM3HF8iRjguXXYzpIRrF66InI+TdWH7dcbljjLbw+sdmq34RP8wHbscMKvOXcdiFBX0JacgHj8hHyhbwwZykVyWxzdlQdynjZbwU8WVDY+wkcanUYhhYiIXL7UPAcRHwU2si1kK9BgfSQFyLDLtbwLpeluFjNsI/8ABFyTyfi/9/qWE5TSTyAuIdhIhhsEbQ8SO7bhJOaD8sFmz9jY+rrqEYxLVyOs6j4Rj36w4qc9IpxhmvERLQDLb1udxRw3hSgV373SQ6w2uQA0+yA2AGxhILRJhCraa4BcZAyOgIVTAWte513Qi5zJjEl9ekL/Q5Nk3gE+ypXnAF2wQVJbKSeasiSKCqALh2T6CW5xHjCoSEV+RH9luG07rfwibIDmyfiX3UDKN9C+XdL1XrztabeQlU6RnkEBOYLiUJdesUTOZ8l2nGF5Art5haK1WKUV20BeTmNF2C7wRWWetiXEtdFros83KR+bejjWYVmxsiHPjQDiil/o1Aae9AnJNDqERiNSHVdyGzfUwVCkOvUjtfqbOhPE9kLAXkoHsPO1s5qe/KYfSgeM+re5kSJrSOpXbJ6D9mzFlZqQ3+7HRA7IJZQIK3qb6vB+9nI6yMXF56tj3wXhQ44Q9cswkIhcoMd0aAJzeRM7uRvZXGfr9CPpbAxbtsz6eREz3+nsF+RM9yjKGzTPbLCbnB2IHz7iBggjuVrKzHB4vZBFkPBR56mWIfgBkL6FeSyabdNSkaDczhNluoYZ5cK3kcu4zZVCu7e2zogKii0+t5m7PfxlCBPLwI+BPkh/EBBQ76+QzcPJB7AaWdU5Mn8hMSzRVr3U6fKBp14fkUGOU542sLHFc9GPTz95ZO3g0eKKLMLEWfgI0lMXi0wXdlX8ejHyOYcdbW1bxrIwfjKdDo5c+ZkhPeUM6bdqq7uXvA6ICootPqCV01zS1f7DngqKAQqVrSlqxvcYC2MJCcG/XvIC4qhepDZCIHsACxvXl47RtvuyrBPlBQ6ef2KROIcRV7b2zlMh5bXDVJsH+IpEzeIXX0R02pH5Byls221zUWm0bxfm9k0DRk3BL4cwLcEDHvqa0/ks38O6omFFaUN2ZzGkAfoj6szurIuj62xx64nc1Yd/EO6FP3NJRSaDYnwcJJ6cM5KJ+0ZyoU3uvmtV9rG9Cy5yW7x8cg31bBqtLfu8knrX35M0rg/22kBzzlm76psgrJ3WGxNfWgbvgmSIrtOsqxvnfFxxGbbxxHXw9pFkElr8nzFwSrDS3KjfLPKhDSKjcVQeJxbrwIPunk9iDY9GnY6m621WmdafKpv9J14fz3xjo8TGyfGccU7rsfGL/6WI/0ZXlw0hwbAOQVFVrdfiPdfUsU7btvyAu8X7pGSwkN+sTuQI6Q3yYtz9RzOAf9YVVZXf0pfHsbVPyQwwx8=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-01-19T02:31:05.452Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="qArDjsoGVQ44Dr8Bmz3o" version="16.2.7" type="github">
+  <diagram id="SD_GLQ9VekcqfIouxr11" name="Page-1">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="HQpAR4vY4TTFvMgATuz_-0" />
+        <mxCell id="HQpAR4vY4TTFvMgATuz_-1" parent="HQpAR4vY4TTFvMgATuz_-0" />
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-12" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" source="7me5INYPsJIEHoTj8Pcg-0" target="7me5INYPsJIEHoTj8Pcg-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-0" value="原始数据&lt;br&gt;（fastq)" style="ellipse;whiteSpace=wrap;html=1;" parent="HQpAR4vY4TTFvMgATuz_-1" vertex="1">
+          <mxGeometry x="354" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-16" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" source="7me5INYPsJIEHoTj8Pcg-11" target="7me5INYPsJIEHoTj8Pcg-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-33" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" source="7me5INYPsJIEHoTj8Pcg-11" target="7me5INYPsJIEHoTj8Pcg-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-11" value="clean data&lt;br&gt;(trimmed fastq)" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;textDirection=ltr;" parent="HQpAR4vY4TTFvMgATuz_-1" vertex="1">
+          <mxGeometry x="354" y="270" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-14" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" source="7me5INYPsJIEHoTj8Pcg-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-13" value="去除&lt;br&gt;接头&amp;amp;低质量序列" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" vertex="1">
+          <mxGeometry x="470" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-21" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" source="7me5INYPsJIEHoTj8Pcg-15" target="7me5INYPsJIEHoTj8Pcg-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-39" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" source="7me5INYPsJIEHoTj8Pcg-15" target="7me5INYPsJIEHoTj8Pcg-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-15" value="比对结果&lt;br&gt;（sam/bam）" style="ellipse;whiteSpace=wrap;html=1;" parent="HQpAR4vY4TTFvMgATuz_-1" vertex="1">
+          <mxGeometry x="354" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-18" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" source="7me5INYPsJIEHoTj8Pcg-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-19" value="参考基因组比对" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" vertex="1">
+          <mxGeometry x="470" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-25" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" source="7me5INYPsJIEHoTj8Pcg-20" target="7me5INYPsJIEHoTj8Pcg-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-41" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" source="7me5INYPsJIEHoTj8Pcg-20" target="7me5INYPsJIEHoTj8Pcg-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-20" value="原始表达谱&lt;br&gt;（count matrix）" style="ellipse;whiteSpace=wrap;html=1;" parent="HQpAR4vY4TTFvMgATuz_-1" vertex="1">
+          <mxGeometry x="354" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-22" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" source="7me5INYPsJIEHoTj8Pcg-23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-23" value="RNA&lt;br&gt;（鉴定&amp;amp;定量）" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" vertex="1">
+          <mxGeometry x="470" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-37" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" source="7me5INYPsJIEHoTj8Pcg-24" target="7me5INYPsJIEHoTj8Pcg-36" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-45" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" source="7me5INYPsJIEHoTj8Pcg-24" target="7me5INYPsJIEHoTj8Pcg-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-24" value="差异表达&lt;br&gt;基因/转录本" style="ellipse;whiteSpace=wrap;html=1;" parent="HQpAR4vY4TTFvMgATuz_-1" vertex="1">
+          <mxGeometry x="354" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-26" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" source="7me5INYPsJIEHoTj8Pcg-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-27" value="差异表达分析" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" vertex="1">
+          <mxGeometry x="470" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-32" value="序列质量评估&lt;br&gt;（fastQC)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="HQpAR4vY4TTFvMgATuz_-1" vertex="1">
+          <mxGeometry x="154" y="270" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-36" value="条形图&lt;br&gt;&amp;amp;&lt;br&gt;气泡图" style="ellipse;whiteSpace=wrap;html=1;" parent="HQpAR4vY4TTFvMgATuz_-1" vertex="1">
+          <mxGeometry x="354" y="860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-38" value="比对质量评估&lt;br&gt;(统计比对情况)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="HQpAR4vY4TTFvMgATuz_-1" vertex="1">
+          <mxGeometry x="154" y="430" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-40" value="RNA 表达水平探索&lt;br&gt;（PCA等）" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="HQpAR4vY4TTFvMgATuz_-1" vertex="1">
+          <mxGeometry x="154" y="570" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-42" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" source="7me5INYPsJIEHoTj8Pcg-43" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-43" value="GO/KEGG&lt;br&gt;富集分析" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" parent="HQpAR4vY4TTFvMgATuz_-1" vertex="1">
+          <mxGeometry x="470" y="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7me5INYPsJIEHoTj8Pcg-44" value="差异状态评估" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="HQpAR4vY4TTFvMgATuz_-1" vertex="1">
+          <mxGeometry x="154" y="710" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
