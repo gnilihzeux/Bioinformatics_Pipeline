@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-19T09:24:40.153Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="2QjcqkfFCZ3nXXmd5hiG" version="16.2.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-01-19T09:25:33.510Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="jfbe7OOY5La9zGUTET6j" version="16.2.7" type="github" pages="4">
   <diagram id="SD_GLQ9VekcqfIouxr11" name="RNA-seq常规分析流程">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -249,8 +249,14 @@
       <root>
         <mxCell id="gSs0623AO6ybckm7y93t-0" />
         <mxCell id="gSs0623AO6ybckm7y93t-1" parent="gSs0623AO6ybckm7y93t-0" />
+        <mxCell id="rFTJAyR8YyPa3_NaVKOX-1" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="gSs0623AO6ybckm7y93t-1" source="gSs0623AO6ybckm7y93t-2" target="rFTJAyR8YyPa3_NaVKOX-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="gSs0623AO6ybckm7y93t-2" value="circRNA" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=14;fontColor=default;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
           <mxGeometry x="80" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rFTJAyR8YyPa3_NaVKOX-0" value="数据库注释" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
+          <mxGeometry x="280" y="350" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
