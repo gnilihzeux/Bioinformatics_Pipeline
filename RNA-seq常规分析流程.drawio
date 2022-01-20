@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-20T08:24:39.514Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="39FDqwyWtlrkOYqcxFq3" version="16.2.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-01-20T08:29:21.788Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="JAaTODZyR47Tm7TmX8nQ" version="16.2.7" type="github" pages="4">
   <diagram id="SD_GLQ9VekcqfIouxr11" name="RNA-seq常规分析流程">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -401,16 +401,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7bmLDtfFYhnRE4A4l6aa-6" value="翻译驱动元件" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
-          <mxGeometry x="470" y="680" width="120" height="60" as="geometry" />
+          <mxGeometry x="460" y="680" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7bmLDtfFYhnRE4A4l6aa-7" value="m6A" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
-          <mxGeometry x="670" y="680" width="120" height="60" as="geometry" />
+          <mxGeometry x="660" y="680" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7bmLDtfFYhnRE4A4l6aa-8" value="IRES" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
-          <mxGeometry x="670" y="760" width="120" height="60" as="geometry" />
+          <mxGeometry x="660" y="760" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7bmLDtfFYhnRE4A4l6aa-9" value="ORF预测" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
-          <mxGeometry x="470" y="770" width="120" height="60" as="geometry" />
+          <mxGeometry x="460" y="770" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7bmLDtfFYhnRE4A4l6aa-10" value="RBP 预测" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
           <mxGeometry x="280" y="850" width="120" height="60" as="geometry" />
