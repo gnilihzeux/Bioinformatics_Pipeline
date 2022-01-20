@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-20T08:29:21.788Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="JAaTODZyR47Tm7TmX8nQ" version="16.2.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-01-20T09:18:57.842Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="dytRhFtoEOyqNkYjZvdv" version="16.2.7" type="github" pages="5">
   <diagram id="SD_GLQ9VekcqfIouxr11" name="RNA-seq常规分析流程">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -105,7 +105,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="-Aa7ZXhrVIdaePOv4zky" name="mRNA分析">
-    <mxGraphModel dx="1896" dy="2185" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1896" dy="2110" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="737hnoTCpdToOq-JtSO7-0" />
         <mxCell id="737hnoTCpdToOq-JtSO7-1" parent="737hnoTCpdToOq-JtSO7-0" />
@@ -231,7 +231,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="n6Yq-IJFkOyLwjAZf8uK" name="lncRNA">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="QmjejlGZePa0Qa-1rBb6-0" />
         <mxCell id="QmjejlGZePa0Qa-1rBb6-1" parent="QmjejlGZePa0Qa-1rBb6-0" />
@@ -308,7 +308,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="H5Bac1FvbXs6LP5U_FXH" name="circRNA">
-    <mxGraphModel dx="1673" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1673" dy="831" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="gSs0623AO6ybckm7y93t-0" />
         <mxCell id="gSs0623AO6ybckm7y93t-1" parent="gSs0623AO6ybckm7y93t-0" />
@@ -432,6 +432,47 @@
         </mxCell>
         <mxCell id="ArTXeCsMO-pA-a6hPclw-6" value="互补序列" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
           <mxGeometry x="460" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ebLw_NTYOsivmSPFlrG-" name="miRNA">
+    <mxGraphModel dx="1422" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="nzcXOT4XFG93VC84Ha8e-0" />
+        <mxCell id="nzcXOT4XFG93VC84Ha8e-1" parent="nzcXOT4XFG93VC84Ha8e-0" />
+        <mxCell id="xTjt3aByNYZxtu4C-bk5-0" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="nzcXOT4XFG93VC84Ha8e-1" source="xTjt3aByNYZxtu4C-bk5-5" target="xTjt3aByNYZxtu4C-bk5-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xTjt3aByNYZxtu4C-bk5-3" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="nzcXOT4XFG93VC84Ha8e-1" source="xTjt3aByNYZxtu4C-bk5-5" target="xTjt3aByNYZxtu4C-bk5-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xTjt3aByNYZxtu4C-bk5-5" value="&amp;nbsp;miRNA" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=14;fontColor=default;" vertex="1" parent="nzcXOT4XFG93VC84Ha8e-1">
+          <mxGeometry x="50" y="236" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xTjt3aByNYZxtu4C-bk5-8" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="nzcXOT4XFG93VC84Ha8e-1" source="xTjt3aByNYZxtu4C-bk5-12" target="xTjt3aByNYZxtu4C-bk5-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xTjt3aByNYZxtu4C-bk5-9" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="nzcXOT4XFG93VC84Ha8e-1" source="xTjt3aByNYZxtu4C-bk5-12" target="xTjt3aByNYZxtu4C-bk5-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xTjt3aByNYZxtu4C-bk5-10" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="nzcXOT4XFG93VC84Ha8e-1" source="xTjt3aByNYZxtu4C-bk5-12" target="xTjt3aByNYZxtu4C-bk5-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xTjt3aByNYZxtu4C-bk5-12" value="互作网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="nzcXOT4XFG93VC84Ha8e-1">
+          <mxGeometry x="250" y="236" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xTjt3aByNYZxtu4C-bk5-16" value="表达&lt;br&gt;相关性网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="nzcXOT4XFG93VC84Ha8e-1">
+          <mxGeometry x="440" y="156" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xTjt3aByNYZxtu4C-bk5-17" value="miRNA-targets&lt;br&gt;调控网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="nzcXOT4XFG93VC84Ha8e-1">
+          <mxGeometry x="440" y="236" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xTjt3aByNYZxtu4C-bk5-18" value="ceRNA&lt;br&gt;调控网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="nzcXOT4XFG93VC84Ha8e-1">
+          <mxGeometry x="440" y="316" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xTjt3aByNYZxtu4C-bk5-21" value="亚细胞定位" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="nzcXOT4XFG93VC84Ha8e-1">
+          <mxGeometry x="250" y="36" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
