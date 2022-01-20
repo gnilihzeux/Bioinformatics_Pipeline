@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-20T07:49:18.685Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="3vEOWdN9v40Fj9RkIukV" version="16.2.7" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-01-20T08:15:09.113Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="e2K6vXR_CgvD-RdBI7YY" version="16.2.7" type="github" pages="5">
   <diagram id="SD_GLQ9VekcqfIouxr11" name="RNA-seq常规分析流程">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -302,7 +302,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="H5Bac1FvbXs6LP5U_FXH" name="circRNA">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="981" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="gSs0623AO6ybckm7y93t-0" />
         <mxCell id="gSs0623AO6ybckm7y93t-1" parent="gSs0623AO6ybckm7y93t-0" />
@@ -312,20 +312,56 @@
         <mxCell id="atTGYw-WpSgNIz1EzUAh-1" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="gSs0623AO6ybckm7y93t-1" source="gSs0623AO6ybckm7y93t-2" target="atTGYw-WpSgNIz1EzUAh-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="Miof6chFfShAFrEUx8-C-1" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="gSs0623AO6ybckm7y93t-1" source="gSs0623AO6ybckm7y93t-2" target="Miof6chFfShAFrEUx8-C-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="gSs0623AO6ybckm7y93t-2" value="circRNA" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=14;fontColor=default;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
           <mxGeometry x="80" y="350" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rFTJAyR8YyPa3_NaVKOX-3" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="gSs0623AO6ybckm7y93t-1" source="rFTJAyR8YyPa3_NaVKOX-0" target="rFTJAyR8YyPa3_NaVKOX-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="Miof6chFfShAFrEUx8-C-3" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="gSs0623AO6ybckm7y93t-1" source="rFTJAyR8YyPa3_NaVKOX-0" target="Miof6chFfShAFrEUx8-C-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rFTJAyR8YyPa3_NaVKOX-0" value="数据库注释" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
           <mxGeometry x="280" y="350" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rFTJAyR8YyPa3_NaVKOX-2" value="已知 circRNA&lt;br&gt;(circBank/circBase)" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
-          <mxGeometry x="490" y="250" width="120" height="60" as="geometry" />
+          <mxGeometry x="460" y="290" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="atTGYw-WpSgNIz1EzUAh-0" value="互作网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
           <mxGeometry x="280" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Miof6chFfShAFrEUx8-C-0" value="保守性分析" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
+          <mxGeometry x="280" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Miof6chFfShAFrEUx8-C-2" value="宿主基因注释" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
+          <mxGeometry x="460" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lBhyVgX7Gc925aRyB4Vo-0" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="gSs0623AO6ybckm7y93t-1" target="lBhyVgX7Gc925aRyB4Vo-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="480" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lBhyVgX7Gc925aRyB4Vo-1" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="gSs0623AO6ybckm7y93t-1" target="lBhyVgX7Gc925aRyB4Vo-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="480" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lBhyVgX7Gc925aRyB4Vo-2" value="" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;jumpStyle=none;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=default;endArrow=classic;endSize=6;targetPerimeterSpacing=0;strokeColor=default;" edge="1" parent="gSs0623AO6ybckm7y93t-1" target="lBhyVgX7Gc925aRyB4Vo-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="480" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lBhyVgX7Gc925aRyB4Vo-3" value="表达&lt;br&gt;相关性网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
+          <mxGeometry x="470" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lBhyVgX7Gc925aRyB4Vo-4" value="miRNA-circRNA&lt;br&gt;调控网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
+          <mxGeometry x="470" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lBhyVgX7Gc925aRyB4Vo-5" value="ceRNA&lt;br&gt;调控网络" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Times New Roman;rounded=1;" vertex="1" parent="gSs0623AO6ybckm7y93t-1">
+          <mxGeometry x="470" y="590" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
