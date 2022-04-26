@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-26T06:58:35.186Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="fqkfwV5z1mg8WgPwaA0B" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-26T07:15:24.536Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="n3eHLv3D6md_7us_i8RO" version="17.4.6" type="github">
   <diagram id="oj7d3_LcZN7CaHeW1Nzq" name="Page-1">
-    <mxGraphModel dx="880" dy="397" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="914" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -20,14 +20,37 @@
         <mxCell id="Xa-upw862xjAUNYqymwc-2" value="TCGA RCC" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="354" y="260" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="bN3tBE4evpGpgj2AaS4t-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bN3tBE4evpGpgj2AaS4t-7" target="bN3tBE4evpGpgj2AaS4t-8">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="bN3tBE4evpGpgj2AaS4t-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bN3tBE4evpGpgj2AaS4t-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="342" y="470" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="bN3tBE4evpGpgj2AaS4t-7" value="Gene Mutation Screen with&lt;br&gt;Suvival &amp;amp; Multivariable Cox Aanalysis" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="390" width="204" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="bN3tBE4evpGpgj2AaS4t-8" value="VHL-MT &amp;amp; VHL-WT" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="282" y="470" width="120" height="60" as="geometry" />
+        <mxCell id="bN3tBE4evpGpgj2AaS4t-13" value="Mutation &amp;amp; CNV&lt;br&gt;Aanalysis" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="565" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bN3tBE4evpGpgj2AaS4t-16" value="TMB/NAL/DDR" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="565" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bN3tBE4evpGpgj2AaS4t-18" value="immune-related genes&lt;br&gt;&amp;amp;&lt;br&gt;L22 immune cells" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="271" y="565" width="143" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bN3tBE4evpGpgj2AaS4t-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bN3tBE4evpGpgj2AaS4t-20" target="bN3tBE4evpGpgj2AaS4t-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bN3tBE4evpGpgj2AaS4t-20" value="&lt;span&gt;VHL-MT&lt;/span&gt;&lt;br&gt;&lt;span&gt;vs&lt;/span&gt;&lt;br&gt;&lt;span&gt;VHL-WT&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="282.5" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bN3tBE4evpGpgj2AaS4t-30" value="GSEA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="282.5" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bN3tBE4evpGpgj2AaS4t-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bN3tBE4evpGpgj2AaS4t-31" target="bN3tBE4evpGpgj2AaS4t-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bN3tBE4evpGpgj2AaS4t-31" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="132.5" y="555" width="420" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
