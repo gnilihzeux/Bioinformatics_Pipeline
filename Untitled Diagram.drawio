@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-10T03:53:02.243Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="jqKFm8PGavzKEI08vjwA" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-10T03:55:28.784Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="4qnsCzJ2SryZTPBTMahK" version="17.4.6" type="github">
   <diagram id="NdgCnNSXIsUmT931TGcp" name="Page-1">
     <mxGraphModel dx="640" dy="453" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -10,8 +10,20 @@
         <mxCell id="ga2xYt5LpuPtbKSZWXpc-1" value="&lt;span style=&quot;color: rgb(33 , 33 , 33) ; font-family: &amp;#34;cambria&amp;#34; , &amp;#34;cambria math&amp;#34; , &amp;#34;stixgeneral&amp;#34; , &amp;#34;times new roman&amp;#34; , &amp;#34;times&amp;#34; , serif ; font-size: 13px ; background-color: rgb(255 , 255 , 255)&quot;&gt;metabolism‐relevant genes&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="250" y="100" width="130" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="ga2xYt5LpuPtbKSZWXpc-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="1" source="ga2xYt5LpuPtbKSZWXpc-4" target="ga2xYt5LpuPtbKSZWXpc-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="ga2xYt5LpuPtbKSZWXpc-4" value="remained genes" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="255" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ga2xYt5LpuPtbKSZWXpc-8" value="NMF clusters" style="whiteSpace=wrap;html=1;fontSize=13;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="255" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ga2xYt5LpuPtbKSZWXpc-11" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 13px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;1. MAD &amp;lt;= 0.5&lt;/span&gt;&lt;br style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 13px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 13px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;2. Coxph p &amp;lt; 0.05&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="320" y="180" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ga2xYt5LpuPtbKSZWXpc-12" value="&lt;div style=&quot;text-align: center&quot;&gt;&lt;span&gt;&lt;font face=&quot;helvetica&quot;&gt;NMF&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="320" y="330" width="130" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
