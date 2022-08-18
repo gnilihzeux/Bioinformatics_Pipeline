@@ -1,44 +1,73 @@
-<mxfile host="app.diagrams.net" modified="2022-08-18T02:22:46.856Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="Wb92IFxx5k_BoKaWjDs8" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-18T02:30:43.625Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="2fYhtvKWjPE6WmOiHu12" version="20.2.3" type="github">
   <diagram id="SdH8h33Is6mAPDRDJcAD" name="第 1 页">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="hQWNEwoph8FkXcu4VqdX-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hQWNEwoph8FkXcu4VqdX-4" target="hQWNEwoph8FkXcu4VqdX-5">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="170" />
+              <mxPoint x="310" y="170" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="hQWNEwoph8FkXcu4VqdX-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hQWNEwoph8FkXcu4VqdX-4" target="hQWNEwoph8FkXcu4VqdX-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="hQWNEwoph8FkXcu4VqdX-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hQWNEwoph8FkXcu4VqdX-4" target="hQWNEwoph8FkXcu4VqdX-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="170" />
+              <mxPoint x="604" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hQWNEwoph8FkXcu4VqdX-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hQWNEwoph8FkXcu4VqdX-4" target="hQWNEwoph8FkXcu4VqdX-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="170" />
+              <mxPoint x="170" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hQWNEwoph8FkXcu4VqdX-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hQWNEwoph8FkXcu4VqdX-4" target="hQWNEwoph8FkXcu4VqdX-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="170" />
+              <mxPoint x="750" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="hQWNEwoph8FkXcu4VqdX-4" value="差异的细胞焦亡基因" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="110" width="120" height="80" as="geometry" />
+          <mxGeometry x="400" y="40" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="hQWNEwoph8FkXcu4VqdX-5" value="绘制热图" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="280" width="120" height="60" as="geometry" />
+          <mxGeometry x="250" y="310" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="hQWNEwoph8FkXcu4VqdX-7" value="miRNA -mRNA &lt;br&gt;调控网络" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="320" y="280" width="120" height="60" as="geometry" />
+          <mxGeometry x="400" y="310" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="hQWNEwoph8FkXcu4VqdX-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hQWNEwoph8FkXcu4VqdX-9" target="hQWNEwoph8FkXcu4VqdX-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hQWNEwoph8FkXcu4VqdX-9" value="所有表达的基因" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="540" y="120" width="120" height="80" as="geometry" />
+          <mxGeometry x="400" y="420" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="hQWNEwoph8FkXcu4VqdX-10" value="GSEA分析" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="540" y="280" width="120" height="60" as="geometry" />
+          <mxGeometry x="400" y="580" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="hQWNEwoph8FkXcu4VqdX-12" value="细胞焦亡基因集合" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="610" y="230" width="60" height="30" as="geometry" />
+          <mxGeometry x="470" y="530" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="hQWNEwoph8FkXcu4VqdX-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hQWNEwoph8FkXcu4VqdX-13" target="hQWNEwoph8FkXcu4VqdX-14">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="hQWNEwoph8FkXcu4VqdX-16" value="PPI 网络" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="544" y="310" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="hQWNEwoph8FkXcu4VqdX-13" value="可变剪切分析" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="440" width="120" height="60" as="geometry" />
+        <mxCell id="hQWNEwoph8FkXcu4VqdX-18" value="绘制组间比较条形图" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="310" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="hQWNEwoph8FkXcu4VqdX-14" value="查看焦亡基因是否存在可变剪切" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="220" y="555" width="120" height="60" as="geometry" />
+        <mxCell id="hQWNEwoph8FkXcu4VqdX-20" value="表达相关性分析" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="310" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
